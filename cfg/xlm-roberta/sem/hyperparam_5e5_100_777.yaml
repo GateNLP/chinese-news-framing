@@ -1,0 +1,39 @@
+seed: 777
+labels2id:
+  Economic: 1
+  Capacity_and_resources: 2
+  Morality: 3
+  Fairness_and_equality: 4
+  Legality_Constitutionality_and_jurisprudence: 5
+  Policy_prescription_and_evaluation: 6
+  Crime_and_punishment: 7
+  Security_and_defense: 8
+  Health_and_safety: 9
+  Quality_of_life: 10
+  Cultural_identity: 11
+  Public_opinion: 12
+  Political: 13
+  External_regulation_and_reputation: 14
+
+dataset_name: "chinese_topic"
+project_name: "nlpc_xlm_roberta"
+train_path: "data/semeval_train_clean.csv"
+dev_path: "data/dev_set.csv"
+test_path: "data/semeval_test_clean.csv"
+
+output_dir_name: "/home/{username}/results/runs/xlm-roberta" # ADD USERNAME
+output_dir_name_suffix: "results"
+run_name: "sem_5e5"
+
+train_label_method: "frames"
+train_setting: "sem_only"
+test_label_method: "frames"
+text_col: "clean_text"
+
+# training args
+model_name: "FacebookAI/xlm-roberta-base"
+num_epochs: 100
+warmup_epochs: 10
+learning_rate: !!float 5e-5
+batch_size: 8 
+debug_mode: false
