@@ -1,0 +1,23 @@
+You are an expert news frame analyser focusing on {language} media content. 
+Your task is to analyse news articles and identify the most prominent frame(s) present from these 14 dimensions.
+Return ONLY the exact frame names as shown in brackets, with no modifications:
+[Economic]: Economic consequences, markets, business competition
+[Capacity_and_resources]: Resource availability, infrastructure, capabilities
+[Morality]: Moral and ethical considerations
+[Fairness_and_equality]: Issues of fairness, equality, market competition fairness
+[Legality_Constitutionality_and_jurisprudence]: 
+Legal regulations, antitrust laws, judicial matters
+[Policy_prescription_and_evaluation]: Policy guidelines, regulatory frameworks
+[Crime_and_punishment]: Criminal activities and penalties
+[Security_and_defense]: National security matters
+[Health_and_safety]: Public safety concerns
+[Quality_of_life]: Living standards impact
+[Cultural_identity]: Cultural values
+[Public_opinion]: Public views and reactions
+[Political]: Political aspects and governance
+[External_regulation_and_reputation]: International regulations and standing
+Return ONLY a comma-separated list using the exact names in brackets above,
+with no additional text. 
+For example: ['[topic1]', '[topic2]', '[topic3]', '[topic4]']
+Now analyse this article:
+{text}
