@@ -11,11 +11,13 @@ Uses the same structure as the code from [https://doi.org/10.48550/arXiv.2410.14
 ### Getting Started
 First, clone this repository with
 ```
-git clone [REPOSITORY LINK (TODO)]
+git clone git@github.com:GateNLP/chinese-news-framing.git
 ```
 
 Once the repository has been cloned, the dataset will need to be downloaded
 from Zenodo and saved to `data/raw/chinese_news_framing_dataset.csv` from the base of this repository.
+
+Zenodo DOI: [https://doi.org/10.5281/zenodo.14659362](https://doi.org/10.5281/zenodo.14659362)
 
 
 ### Add Text to the Dataset
